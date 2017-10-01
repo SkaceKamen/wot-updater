@@ -113,7 +113,7 @@ class Updater(object):
 				if host is not None:
 					host = host.find('item')
 					if host is not None:
-						host = host.text
+						self.host = host.text
 		
 		if self.host is None:
 			self.reporter.warning("No host config found, using update.worldoftanks.eu")
